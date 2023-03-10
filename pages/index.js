@@ -7,7 +7,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   useEffect(()=>{
     setLoading(true);
-    setTimeout(()=>setLoading(false),300000)
+    setTimeout(()=>setLoading(false),3000)
   },[])
   return (
     <div>
