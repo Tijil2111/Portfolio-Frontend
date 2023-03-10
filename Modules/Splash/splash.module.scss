@@ -5,16 +5,19 @@
 .mainDiv{
     overflow-y: hidden;
     overflow-x: hidden;
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        
+    }
+   
+    .title{
+        font-family: "Loader Font";
+        font-size: 120px;
+        color: white;
+    }
 }
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    
-}
-.title{
-    font-family: "Loader Font";
-    font-size: 170px;
-    color: white;
-}
+
+
