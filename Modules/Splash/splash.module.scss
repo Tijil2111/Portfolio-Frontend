@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Loader Font";
+    src: url("../../public/fonts/loaderFont.ttf");
+}
+.mainDiv{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+.title{
+    font-family: "Loader Font";
+    font-size: 170px;
+    color: white;
+}

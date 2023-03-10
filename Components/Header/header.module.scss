@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+	width: 100%;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .spacer{
+        flex: 1;
+    }
+    .links{
+        display: flex;
+        
+        gap: 30px;
+        justify-self: flex-end;
+        span{
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
