@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image"
 import Logo from "../../public/Images/logo.svg"
 import styles from "../Header/header.module.scss"
+import Link from "next/link"
 import { motion } from "framer-motion"
 export default function Header() {
   return (
@@ -13,12 +14,12 @@ export default function Header() {
     animate={{opacity: 1, scale: 1 }}
     initial={{ opacity: 0, scale: 1 }}>
       <div assName={styles.image}>
-        <Image src={Logo} alt="Logo" height={50} width={50}/>
+        <Link href={"/"}><Image src={Logo} alt="Logo" height={50} width={50} className={styles.image}/></Link>
       </div>
         <div className={styles.spacer}></div>
       <div className={styles.links}>
-        <span>Projects</span>
-        <span>Guestbook</span>
+        <Link href={"/projects"}><span>Projects</span></Link>
+        <Link href={"/guestbook"}><span>Guestbook</span></Link>
       </div>
     </motion.div>
   )
